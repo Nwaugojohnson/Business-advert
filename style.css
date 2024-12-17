@@ -6,7 +6,7 @@
 
 :root {
   --color-background-light: #F5F5F5;
-  --color-background-dark: #1e1e1e;
+  --color-background-dark: #242222;
   --color-text-primary: #1A1A1A;
   --color-text-secondary: #666666;
   --color-accent-dark: #444444;
@@ -45,14 +45,67 @@
 .nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /* background-color: var(--color-text-primary); */
+  color: #fff;
   gap: 20rem;
   position: absolute;
   top: 4;
-  width: 100%;
+  width: 95%;
   padding: 2rem;
-  min-height: 80vh;
 }
 
-main {
+.nav nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav nav a {
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-content {
+    background-color: var(--color-text-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 90vh;
+    padding: 3rem;
+}
+
+.hero-text {
+    color: #fff;
+    padding: 2rem;
+    border: 5px solid black;
+    width: 15rem;
+}
+
+.text-content {
+    background-color: var(--color-text-secondary);
+    margin-left: -7rem;
+    padding: 2rem;
+ 
+}
+
+.hero-text p {
+    font-size: 0.8rem;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+}
+
+.btn {
+    margin-left: 13rem;
+    
+}
+
+.btn button{
+    background-color: #fff;
+    color: #1e1e1e;
+    padding: 10px 25px;
+    width: max-content;
+    font-weight: bold;
 }
