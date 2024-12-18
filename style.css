@@ -44,7 +44,7 @@
 .nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  color: #fff;
+  color: black;
   gap: 20rem;
   position: absolute;
   top: 4;
@@ -58,7 +58,7 @@
 }
 
 .nav nav a {
-  color: #ffff;
+  color: black;
   text-decoration: none;
   font-weight: bold;
 }
@@ -153,7 +153,7 @@
   margin-top: 2rem;
 }
 
-.services2{
+.services2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -175,14 +175,45 @@
 }
 
 .feature-box {
-  min-height: 70vh;
+  min-height: 60vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .bckg {
   background-color: var(--color-text-secondary);
+ 
 }
+
 .feature-box-content {
+  background-color: var(--color-background-dark);
+  padding: 3rem;
+ 
+}
+
+.feature-box-txt p {
+  background-color: var(--color-highlight);
+  width: fit-content;
+  padding: 0.3rem 1.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  color: black;
+}
+
+.feature-box-txt h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-box-txt2 {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  color: var(--color-highlight);
+}
+
+.feature-box-txt2 p:first-child {
   background-color: var(--color-text-primary);
+  padding: 0.5rem;
 }
