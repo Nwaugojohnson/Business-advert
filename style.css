@@ -217,3 +217,51 @@
   background-color: var(--color-text-primary);
   padding: 0.5rem;
 }
+
+.funfact-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.funfact-text h3 {
+  background-color: var(--color-background-dark);
+  color: #fff;
+  width: 15vh;
+  font-size: 0.8rem;
+  padding: 0.2rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.funfact-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.funfact-text p {
+  line-height: 2;
+}
+
+.funfact-box  {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.funfact-item {
+  text-align: center;
+}
+
+.funfact-item h3 {
+  font-size: 1.9rem;
+}
+
+.funfact-item p {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
