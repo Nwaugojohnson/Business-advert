@@ -182,13 +182,11 @@
 
 .bckg {
   background-color: var(--color-text-secondary);
- 
 }
 
 .feature-box-content {
   background-color: var(--color-background-dark);
   padding: 3rem;
- 
 }
 
 .feature-box-txt p {
@@ -242,14 +240,14 @@
 }
 
 .funfact-text p {
-  line-height: 2;
+  line-height: 1.8;
 }
 
-.funfact-box  {
+.funfact-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
-  padding: 1rem;
+  padding: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -264,4 +262,35 @@
 .funfact-item p {
   font-size: 0.9rem;
   text-transform: capitalize;
+}
+
+.footer-contents {
+  background-color: var(--color-text-secondary);
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 20px;
+}
+
+.footer-content {
+  
+}
+
+.footer-text {
+  margin-top: 1rem;
+  align-items: center;
+  padding: 1.7rem;
+  flex: 1;
+  margin: 0 10px;
+  background-color: var(--color-background-dark);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-text p {
+  font-size: 0.9rem;
+}
+
+.footer-text h3 {
+  color: #fff;
 }
