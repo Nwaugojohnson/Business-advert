@@ -99,6 +99,7 @@
 .btn {
   margin-top: 2.6rem;
   margin-left: 13rem;
+  position: relative;
 }
 
 .btn button {
@@ -107,6 +108,17 @@
   padding: 10px 25px;
   width: max-content;
   font-weight: bold;
+  border: none;
+  z-index: 1;
+}
+
+.btn-2 {
+  margin-top: -3rem;
+  margin-left: 1rem;
+  z-index: 100;
+  width: 100%;
+  padding: 15px 60px;
+  border: 2px solid black;
 }
 
 .services {
@@ -269,21 +281,22 @@
   display: flex;
   justify-content: space-between;
   gap: 2.5rem;
-  padding: 20px;
+  padding: 0 2rem;
 }
 
 .footer-text {
   margin-top: 1rem;
-  align-items: center;
-  padding: 1.7rem;
-  flex: 1;
-  margin: 0 10px;
+  margin: 0 1rem;
   background-color: var(--color-background-dark);
-  padding: 20px;
-  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 30vh;
 }
 
 .footer-text p {
+  text-align: left;
   font-size: 0.9rem;
 }
 
