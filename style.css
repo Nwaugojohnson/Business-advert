@@ -19,9 +19,10 @@
   color: #ffff;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  gap: 3rem;
   padding: 0.5rem;
   font-size: 0.8rem;
+  align-items: center;
 }
 
 .icons {
@@ -35,6 +36,7 @@
 .navlinks ul {
   display: flex;
   gap: 1.3rem;
+  width: max-content;
 }
 
 .navlinks ul li {
@@ -45,15 +47,21 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   color: black;
-  gap: 20rem;
+  gap: 15rem;
   position: absolute;
   top: 4;
   width: 95%;
   padding: 2rem;
 }
 
+.nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .nav nav {
-  display: flex;
+  display: none;
   gap: 2rem;
 }
 
@@ -69,8 +77,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
-  padding: 3rem;
+  min-height: 85vh;
+  padding: 1rem 3rem;
 }
 
 .hero-text {
@@ -98,7 +106,7 @@
 
 .btn {
   margin-top: 2.6rem;
-  margin-left: 13rem;
+  margin-left: 11rem;
   position: relative;
 }
 
@@ -114,10 +122,10 @@
 
 .btn-2 {
   margin-top: -3rem;
-  margin-left: 1rem;
+  margin-left: 0.2rem;
   z-index: 100;
-  width: 100%;
-  padding: 15px 60px;
+  width: 80%;
+  padding: 15px 50px;
   border: 2px solid black;
 }
 
@@ -159,6 +167,7 @@
 
 .service-text2 {
   font-size: 1rem;
+  margin-bottom: 4rem;
 }
 
 .service-text2 .p-text {
@@ -166,17 +175,19 @@
 }
 
 .services2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 4rem;
-  padding: 5rem;
+  gap: 9rem;
+  padding: 3rem;
 }
 
 .service-txt {
+  width: 25rem;
   background-color: var(--color-background-dark);
-  margin-top: -10rem;
+  margin-top: -7rem;
 }
+
 .txt1 {
   text-align: center;
   margin-top: 10rem;
@@ -302,4 +313,48 @@
 
 .footer-text h3 {
   color: #fff;
+}
+
+/* ////////////////////////////////////////////// */
+
+@media screen and (min-width: 768px) {
+  .banner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav {
+    gap: 20rem;
+  }
+  .nav nav {
+    display: flex;
+  }
+  .nav button {
+    display: none;
+  }
+  .services2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+  .service-txt {
+    margin-top: -8rem;
+  }
+}
+
+/* //////////////////////////////////////////// */
+@media screen and (min-width: 1024px) {
+  .service-text2 {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  .services2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    /* min-height: 40vh; */
+    gap: 2rem;
+  }
+  .service-txt {
+    margin-top: -8rem;
+  }
 }
