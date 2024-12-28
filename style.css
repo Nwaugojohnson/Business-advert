@@ -54,11 +54,11 @@
   padding: 2rem;
 }
 
-.nav button {
+/* .nav button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
+} */
 
 .nav nav {
   display: none;
@@ -198,12 +198,12 @@
 }
 
 .feature-box {
-  min-height: 60vh;
+  /* min-height: 20vh; */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .bckg {
+  height: 30rem;
   background-color: var(--color-text-secondary);
 }
 
@@ -240,10 +240,10 @@
 }
 
 .funfact-boxes {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .funfact-text h3 {
@@ -337,6 +337,7 @@
     gap: 3rem;
   }
   .service-txt {
+    width: 20rem;
     margin-top: -8rem;
   }
 }
@@ -345,16 +346,33 @@
 @media screen and (min-width: 1024px) {
   .service-text2 {
     font-size: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.2rem;
   }
   .services2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    /* min-height: 40vh; */
-    gap: 2rem;
+    min-height: 20vh;
+    gap: 1rem;
   }
   .service-txt {
-    margin-top: -8rem;
+    width: 24rem;
+    margin-top: -14rem;
+  }
+  .feature-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bckg {
+    height: 24rem;
+  }
+  .funfact-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .funfact-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
   }
 }
