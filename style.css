@@ -47,10 +47,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   color: black;
-  gap: 15rem;
+  gap: 10rem;
   position: absolute;
   top: 4;
-  width: 95%;
+  width: 75%;
   padding: 2rem;
 }
 
@@ -85,19 +85,19 @@
   color: black;
   padding: 2rem;
   border: 5px solid black;
-  width: 15rem;
+  width: 13rem;
 }
 
 .text-content {
   background-color: var(--color-text-secondary);
   margin-top: 2rem;
-  margin-left: -7rem;
+  margin-left: -4rem;
   text-align: left;
 }
 
 .hero-text p {
   margin-top: 0.6rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .hero-text h1 {
@@ -106,7 +106,7 @@
 
 .btn {
   margin-top: 2.6rem;
-  margin-left: 11rem;
+  margin-left: 8rem;
   position: relative;
 }
 
@@ -122,20 +122,20 @@
 
 .btn-2 {
   margin-top: -3rem;
-  margin-left: 0.2rem;
+  margin-left: -1rem;
   z-index: 100;
   width: 80%;
-  padding: 15px 50px;
+  padding: 15px 38px;
   border: 2px solid black;
 }
 
 .services {
-  min-height: 90vh;
+  min-height: 55vh;
 }
 
 .services-content {
-  min-height: 50vh;
-  padding: 2rem;
+  min-height: 60vh;
+  padding: 0.8rem;
   background-color: var(--color-accent-dark);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -166,7 +166,7 @@
 }
 
 .service-text2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 4rem;
 }
 
@@ -183,7 +183,7 @@
 }
 
 .service-txt {
-  width: 25rem;
+  width: 22rem;
   background-color: var(--color-background-dark);
   margin-top: -7rem;
 }
@@ -266,12 +266,18 @@
   line-height: 1.8;
 }
 
+.funfact-boxes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
 .funfact-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5rem;
-  padding: 2rem;
-  margin-bottom: 2rem;
+  gap: 3rem;
 }
 
 .funfact-item {
@@ -290,9 +296,9 @@
 .footer-contents {
   background-color: var(--color-text-secondary);
   display: flex;
-  justify-content: space-between;
-  gap: 2.5rem;
-  padding: 0 2rem;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 0 1.5rem;
 }
 
 .footer-text {
@@ -322,13 +328,43 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .nav {
-    gap: 20rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: black;
+    gap: 7rem;
+    position: absolute;
+    top: 4;
+    width: 85%;
+    padding: 2rem;
   }
+
+  /* .nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  } */
+
   .nav nav {
     display: flex;
+    gap: 2rem;
   }
-  .nav button {
-    display: none;
+
+  .nav nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .services {
+    min-height: 60vh;
+  }
+  
+  .services-content {
+    min-height: 30vh;
+    padding: 2rem;
+    background-color: var(--color-accent-dark);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
   .services2 {
     display: flex;
@@ -340,10 +376,79 @@
     width: 20rem;
     margin-top: -8rem;
   }
+  .funfact-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
+  }
+  .funfact-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+  .footer-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
 /* //////////////////////////////////////////// */
 @media screen and (min-width: 1024px) {
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: black;
+    gap: 8rem;
+    position: absolute;
+    top: 4;
+    width: 85%;
+    padding: 2rem;
+  }
+
+  /* .nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  } */
+
+  .nav nav {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .services {
+    min-height: 60vh;
+  }
+  .services-content {
+    min-height: 50vh;
+    padding: 2.5rem;
+    background-color: var(--color-accent-dark);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .service-text p {
+    font-size: 2rem;
+    font-weight: bold;
+    gap: 2rem;
+  }
+
+  .service-text2 {
+    font-size: 1rem;
+    /* margin-bottom: 0.3rem; */
+  }
+
+  .service-text2 .p-text {
+    margin-top: 2rem;
+  }
   .service-text2 {
     font-size: 1rem;
     margin-top: 1.2rem;
@@ -356,23 +461,30 @@
     gap: 1rem;
   }
   .service-txt {
-    width: 24rem;
+    width: 18rem;
     margin-top: -14rem;
   }
   .feature-box {
     grid-template-columns: repeat(2, 1fr);
   }
   .bckg {
-    height: 24rem;
+    height: 25rem;
   }
   .funfact-boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 5rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
   }
   .funfact-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
+  }
+  .footer-contents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
   }
 }
